@@ -1,0 +1,173 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px; /* Initial width for desktop */
+  background: #11101d;
+  padding: 15px;
+  z-index: 99;
+  transition: width 0.5s; /* Add transition for smoother resizing */
+}
+
+
+
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+  margin: auto; 
+  
+}
+
+.submenu-active .menu-items {
+  transform: translateX(-56%);
+}
+
+
+
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.item i {
+  font-size: 12px;
+}
+
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: calc(-100% - 26px);
+  height: calc(100% + 100vh);
+  background: #11101d;
+  display: none;
+}
+
+.show-submenu ~ .submenu {
+  display: block;
+}
+
+.submenu .menu-title {
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.submenu .menu-title i {
+  margin-right: 10px;
+}
+
+.navbar,
+.main {
+  left: 120px;
+  width: calc(100% - 120px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
+.sidebar.close ~ .navbar,
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #4070f4;
+  cursor: pointer;
+}
+
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  height: 100vh; /* Take full height of the viewport */
+  overflow-y: auto; /* Enable vertical scroll bar */
+  z-index: 100;
+  background: #d8ebdb;
+}
+
+
+
+.main .layout{
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.joinDateLayout{
+max-height: 100vh;
+overflow: auto;
+}
+
+
+
+.menu-items {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    transition: all 0.4s ease;
+    margin: auto; 
+    padding: 0; /* Remove default padding */
+  }
+  
+  .item a,
+  .submenu-item {
+    padding: 15px; /* Adjust padding as needed */
+    display: block; /* Change to block to occupy full width */
+    border-radius: 12px;
+  }
+  

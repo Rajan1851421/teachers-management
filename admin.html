@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu for Admin Dashboard | CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="menu-content">
+            <ul class="menu-items list-unstyled">
+                <li class="item  " style="margin-left: -15px;">
+                    <a href="#" style="font-size: 10px;" onclick="showLayout('name')">Shushil Tiwari</a>
+                </li>
+                <li class="item " style="margin-left: -15px;">
+                    <a href="#" style="font-size: 10px;" onclick="showLayout('joinDate')">272 days Left</a>
+                </li>
+                <li class="item " style="margin-left: -15px;">
+                    <a href="#" style="font-size: 10px;" onclick="showLayout('contribution')">Contribution</a>
+                </li>
+                <li class="item  " style="margin-left: -15px;">
+                    <a href="#" style="font-size: 10px;" onclick="showLayout('profile')">Profile</a>
+                </li>
+                <li class="item  " style="margin-left: -15px;">
+                    <a href="#" style="font-size: 10px;" onclick="showLayout('rashid')">Upload <br> Receipt</a>
+                </li>
+                <li class="item  " style="margin-left: -15px;">
+                    <a href="#" style="font-size: 10px;" onclick="showLayout('rashidsahyog')">Upload <br> Receipt</a>
+                </li>
+                <li class="item  " style="margin-left: -15px;">
+                    <a href="#" style="font-size: 10px;" onclick="showLayout('showhelp')">सहयोग देखें <br>105 से अब
+                        तक</a>
+                </li>
+                <li class="item  " style="margin-left: -15px;">
+                    <a href="#" style="font-size: 10px;" onclick="showLayout('showhelptwo')">सहयोग देखें <br>33 से अब
+                        104 तक</a>
+                </li>
+                <li class="item  " style="margin-left: -15px;">
+                    <a href="#" style="font-size: 10px;" onclick="showLayout('showhelpthree')">सहयोग देखें <br>2 से अब
+                        32 तक</a>
+                </li>
+
+                <li class="item  " style="margin-left: -15px;">
+                    <a href="#" style="font-size: 10px;" onclick="showLayout('logout')"><strong>Logout </strong></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <nav class="navbar">
+        <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    </nav>
+
+    <main class="main">
+        <div class="layout max-h-100% overflow " id="nameLayout">
+            <form class="row g-1">
+
+                <div class="col-md-12">
+                    <h3 class="mb-4">Basic Detail</h3>
+                    <hr>
+                </div>
+
+
+                <div class="col-md-10">
+                    <label for="name" class="form-label"><strong>Sushil Tiwari</strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="ehrms" class="form-label"><strong>EHRMS code</strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="email" class="form-label"><strong>Email</strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="gender" class="form-label"><strong>Gender</strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="dob" class="form-label"><strong>DOB</strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="mobile" class="form-label"><strong>Mobile</strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="mobile" class="form-label"><strong>Blood Group</strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="mobile" class="form-label"><strong>TCID</strong></label>
+
+                </div>
+            </form>
+            <form class="row g-1">
+                <div class="col-md-12">
+                    <h3 class="mb-4">School Detail</h3>
+                    <hr>
+                </div>
+                <hr>
+                <div class="col-md-10">
+                    <label for="name" class="form-label"><strong>School Name with NPRC </strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="ehrms" class="form-label"><strong>Department</strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="email" class="form-label"><strong>Pst</strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="gender" class="form-label"><strong>Block</strong></label>
+
+                </div>
+                <div class="col-md-10">
+                    <label for="dob" class="form-label"><strong>District</strong></label>
+
+                </div>
+                <form class="row g-1">
+                    <div class="col-md-12">
+                        <h3 class="mb-4">Nominee Detail</h3>
+                        <hr>
+                    </div>
+                    <hr>
+                    <div class="col-md-10">
+                        <label for="name" class="form-label"><strong>Frist Nominee Name</strong></label>
+
+                    </div>
+                    <div class="col-md-10">
+                        <label for="ehrms" class="form-label"><strong>Frsit Nominee Relation</strong></label>
+
+                    </div>
+                    <div class="col-md-10">
+                        <label for="email" class="form-label"><strong>Frsit Nominee Mobile</strong></label>
+
+                    </div>
+                    <div class="col-md-10">
+                        <label for="name" class="form-label"><strong>Second Nominee Name</strong></label>
+
+                    </div>
+                    <div class="col-md-10">
+                        <label for="ehrms" class="form-label"><strong>Second Nominee Relation</strong></label>
+
+                    </div>
+                    <div class="col-md-10">
+                        <label for="email" class="form-label"><strong>Second Nominee Mobile</strong></label>
+
+                    </div>
+                </form>
+            </form>
+        </div>
+
+        <div class="layout" id="joinDateLayout" style="display: none;">
+            <h1>Join Date Layout</h1>
+            <p>This is the Join Date layout.</p>
+        </div>
+        <div class="layout" id="contributionLayout" style="display: none;">
+            <h1>Contribution Layout</h1>
+            <p>This is the Contribution layout.</p>
+        </div>
+        <div class="layout" id="profileLayout" style="display: none;">
+            <h1>Profile Layout</h1>
+            <p>This is the Profile layout.</p>
+        </div>
+        <div class="layout" id="rashidLayout" style="display: none;">
+            <h1>Rashid Layout</h1>
+            <p>This is the Rashid layout.</p>
+        </div>
+        <div class="layout" id="rashidsahyogLayout" style="display: none;">
+            <h1>Rashid sahyog Layout</h1>
+            <p>This is the Rashid layout.</p>
+        </div>
+        <div class="layout" id="showhelpLayout" style="display: none;">
+            <h1>Rashid sahyog देखे Layout</h1>
+            <p> देखेThis is the Rashid layout.</p>
+        </div>
+        <div class="layout" id="showhelptwoLayout" style="display: none;">
+            <h1>Rashid sahyog 2 देखे Layout</h1>
+            <p> देखेThis is the Rashid layout.</p>
+        </div>
+        <div class="layout" id="showhelpthreeLayout" style="display: none;">
+            <h1>Rashid sahyog 3 देखे Layout</h1>
+            <p> देखेThis is the Rashid layout.</p>
+        </div>
+        <div class="layout" id="logoutLayout" style="display: none;">
+          <a href="login.html" class="btn btn-primary">Login</a>
+        </div>
+        
+
+
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Display only the "Name" layout by default
+            showLayout('name');
+        });
+
+        function showLayout(layoutId) {
+            // Hide all layouts
+            document.querySelectorAll('.layout').forEach(layout => {
+                layout.style.display = 'none';
+            });
+
+            // Show the selected layout
+            document.getElementById(layoutId + 'Layout').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
